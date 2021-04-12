@@ -1,0 +1,2 @@
+DOS = Disk Operating System
+AISEM = Anak Islam Suka Membaca
