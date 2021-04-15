@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1><center>Data Mahasiswa</center></h1>
-    <p>Jumlah Data: 4</p>
+    
     <table border="1">
         <tr>
             <td>No</td>
@@ -50,5 +50,6 @@
         
         
     </table>
+    <p>Jumlah Data: <?php echo $no-1 ?></p>
 </body>
 </html>
