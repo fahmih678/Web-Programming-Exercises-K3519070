@@ -19,7 +19,7 @@ if (isset($_POST['submit'])){
             setcookie("namauser", $profile_user[1], time() + 3600, "/");
 
             // redirect halaman ke page1.php
-            header("Location:page1.php");
+            header("Location:index.php");
         }
     }
 
