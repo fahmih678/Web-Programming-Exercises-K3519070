@@ -2,10 +2,7 @@
     session_start();
     // menset angka random untuk ditebak
     if(!isset($_SESSION['angkaRandom'])){
-        $_SESSION['angkaRandom1'] = rand(0, 20);
-        $_SESSION['angkaRandom2'] = rand(0, 20);
-        $random1 = $_SESSION['angkaRandom1'];
-        $random2 = $_SESSION['angkaRandom2'];
+        $_SESSION['angkaRandom'] = rand(0, 100);
     } 
 ?>
 
@@ -23,7 +20,7 @@ Anda menebak ya!</h3>
 
     <!-- form input angka tebakan anda -->
     <form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
-        <label for="inputTebakan">Berapakah <?php echo $random1 . '+' . $random2  .'=' ?> </label>
+        <label for="inputTebakan">Bilangan tebakan anda: </label>
         <input type="number" name="angkaTebakan" id="inputTebakan" placeholder="tebakan anda" required>
 
         <button type="submit" name="submitTebakan">Tebak</button>
